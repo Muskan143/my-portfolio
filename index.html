@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" 
+      integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==
+      " crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  </head>
+  <body> 
+    <!--navbar open--> 
+    <div class="nav"> 
+      <h1>Muskan</h1>
+      <div class="page2">
+        <h3><a href="#home">home</a></h3>
+        <h3><a href="#projects">projects</a></h3>
+        <h3><a href="#skills">skilles</a></h3>
+        <h3><a href="#contact me">contact me</a></h3>
+        <h2 id="dark-mode"><i class="fa-solid fa-moon"></i></h2>
+      </div>
+    </div>
+    <!--navbar close-->
+    <!--home-->
+    <div class="home" id="home"> 
+      <div class="image">
+        <img src="img/my pic.jpeg" class="myImage"/>
+      </div>
+      <div class="lines">
+        <div class="line1">
+          <h2>I'm Muskan</h2>
+        </div>
+        <div class="line2">
+          <h1> Front-End</h1>
+        </div>
+        <div class="line3">
+          <h1>Web Developer</h1>
+        </div>
+      </div>
+      <div class="btn">
+        <button class="mybtn">view skills</button>
+      </div>
+    </div>  
+    <!--project-->
+    <div class="projects"id="projects">
+      <h1>some of my projects</h1>
+     <div class="boxes">
+      <div class="box">
+        <img src="img/to do list.jpg" class="to do"/><br>
+        <h4>TO DO LIST</h4><br>
+        <h3>
+          <a href="#">Check It Out</a></h3>
+      </div>
+      <div class="box">
+        <img src="img/tribute page.jpg" class="tribute"/>
+        <h4>tribute page</h4>
+        <h3>
+          <a href="#">Check It Out</a></h3>
+      </div>
+      <div class="box">
+        <img src="img/gui2.jpg" class="gui project"/><br>
+        <h4>GUI based projest</h4><br>
+        <h3>
+          <a href="#">Check It Out</a></h3>
+      </div>
+     </div>
+    </div>
+    <!--skills-->
+    <div class="skills" id="skills">
+      <h1>Skills</h1>
+      <div class="images">
+        <div class="html">
+          <img src="img/html img.jpg" class="html1"/>
+        </div>
+      </div>
+      <div class="images1"> 
+        <div class="css">
+          <img src="img/css img.jpg" class="css1"/>
+        </div>
+
+        <div class="javascript">
+          <img src="img/js img.jpg" class="javascript1"/>
+        </div>
+      </div>
+
+    </div>
+    <!--contact-->
+    <div class="contact">
+      <h1>Contact me</h1>
+       <form id="myForm">
+        <div class="form">
+          <label for="name">Name</label>
+          <input placeholder="Name" id="name" name="name"
+           type="text" />
+          <label for="email">Email</label>
+          <input placeholder="Email" id="Email" name="Email" 
+          type="email" />
+          <label for="message">Message</label>
+          <textarea name="message" id="message"
+          placeholder="message"></textarea>
+          <button class="btnSubmit">Submit</button>
+          <div class="formoutput">
+
+          </div>
+        </div>
+
+
+       </form>
+
+    </div>
+
+    <footer class="background">
+      <p class="text-footer">
+        Copyright ©-All rights are reserved
+      </p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

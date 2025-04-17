@@ -1,0 +1,282 @@
+/*bolierplate*/
+@font-face {
+    font-family: 'Gilroy';
+    src: url(Gilroy-Light.otf) format('truetype') ;
+    font-weight: 500;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy','sans-sarif';
+} 
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+/*nav*/
+.nav{
+    height: 90px;
+    width: 100%;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+     padding: 30px 50px;
+}
+
+.nav h3 a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.page2{
+    display: flex;
+    gap: 50px;
+}
+
+.page2 h3 a{
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 2s ease;
+}
+
+.page2 h3 a:hover{
+    border-bottom: 3px solid white;
+}
+
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+
+.light-mode{
+    background-color: white;
+    color: black;
+}
+
+.light-mode .nav h3 a{
+    background-color: white;
+    color: black;
+}
+
+.light-mode .page2 h3 a{
+    border-bottom: 3px solid transparent;
+}
+
+.light-mode .page2 h3 a:hover{
+    border-bottom: 3px solid black;
+}
+/*home*/ 
+.home{
+    height: 420px;
+    width: 100%;
+     
+    
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+}
+
+.myImage{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.line1{
+    text-align: center;
+}
+.line2{
+    text-align: center;
+    font-size: 45px;
+}
+.line3{
+    text-align: center;
+    font-size: 45px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.mybtn{
+    height: 50px;
+    width: 150px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    border: none;
+    background-color:white;
+    color: black;
+}
+.mybtn:hover{
+    background-color: wheat;
+    cursor: pointer;
+}
+.light-mode .mybtn{
+    background-color:black ;
+    color: white;
+}
+.light-mode .mybtn:hover{
+    background-color:rgb(24,23,23); 
+}
+/*projects*/
+.projects{
+    height: 480px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+.boxes{
+    margin-top: 20px ;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    height: 380px;
+    width: 320px;
+    border: 2px solid rgb(248, 244, 244);
+    border-radius: 20px;
+}
+.box .to do{
+    height: 140px;
+    margin-top: 70px;
+    border-radius: 20px;
+}
+.box .h4{
+    margin-top: 10px;
+}
+.box .tribute{
+    height: 240px;
+    margin-top: 70px;
+    border-radius: 20px;
+}
+.box .gui .projects{
+    height: 120px;
+    margin-top: 70px;
+    border-radius: 20px;
+}
+.light-mode .projects{
+    background-color: white;
+    color: black;
+}
+.light-mode .box{
+    border: 2px solid black;
+}
+.light-mode .box .to do{
+     border: 2px solid black;
+}
+.light-mode box .tribute{
+    border: 2px solid black;
+}
+.light-mode .gui{
+    border: 2px solid black;
+}
+/*skills*/
+.skills{
+    height: 400px;
+    width: 100%;
+     margin-top: 30px;
+     text-align: center;
+}
+ 
+ 
+.html1{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-left: 620px;
+    border: 2px solid white;
+}
+.images{
+    display: flex;
+    margin-top: 20px;
+}
+.images1{
+    display: flex;
+}
+.css{
+    display: flex;
+    margin-left: 300px; 
+     
+}
+.css1{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.javascript{
+    display: flex;
+    margin-left: 400px;
+     
+}
+.javascript1{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.light-mode .skills{
+    background-color: white;
+    color: black;
+} 
+.light-mode .html1{
+    border: 2px solid black;
+}
+.light-mode .css1{
+    border: 2px solid black;
+}
+.light-mode .javascript1{
+    border: 2px solid black;
+}
+/*contact*/
+.contact{
+    height: 520px;
+    width: 100%;
+     
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+ 
+.form label{
+    margin-left: 450px;
+}
+
+.form input{
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 450px;
+}
+.form textarea{
+    height: 50px;
+    width: 400px; 
+    border-radius: 10px;
+    margin-left: 450px;
+    border: none;
+}
+.form .btnSubmit{
+    height: 40px;
+    width: 150px; 
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black ;
+    margin-left: 500px;
+    margin-top: 30px;
+}
+.contact h1{
+    text-align: center;
+}
